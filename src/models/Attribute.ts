@@ -14,4 +14,8 @@ export class Attribute<T> {
     set(update: T): void {
         (<any>Object).assign(this.data, update);
     }
+
+    getAll(): T {
+        return this.data;
+    }
 }
